@@ -42,12 +42,27 @@ body {
   letter-spacing: 0.03em;
 }
 
+/*Загальні налаштування*/
+.list {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 2px solid tomato;
+}
+
+.main-menu {
+  align-items: center;
+  display: flex;
+  justify-content: ;
 }
 
 /* Логотип*/
@@ -60,23 +75,17 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 85px;
 }
 .logo-web {
   color: var(--acent-text-color);
-}
-
-/*Загальні налаштування*/
-.list {
-  list-style: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
 }
 
 /*Навігація*/
 .site-nav {
   margin-top: 0px;
   margin-bottom: 0px;
+  display: flex;
 }
 
 .site-nav .link {
@@ -86,6 +95,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .site-nav .link.current {
   color: var(--acent-text-color);
@@ -96,8 +108,14 @@ body {
 .site-nav .link:focus {
   color: var(--acent-text-color);
 }
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 /*Контакти*/
+.contacts {
+  margin-left: auto;
+}
 .contacts a {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -105,6 +123,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: inline-flex;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+.contacts a + a {
+  margin-left: 30px;
 }
 .contacts a:hover {
   color: var(--acent-text-color);
@@ -128,11 +152,12 @@ body {
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 0px;
+  display: block;
 }
 .hero .btn {
   background-color: var(--acent-text-color);
   padding: 10px 32px;
-  display: flex;
+  display: inline-block;
   align-items: center;
   border-color: transparent;
   border-radius: 4px;
@@ -171,6 +196,13 @@ body {
 }
 .text .container {
   margin-bottom: 94px;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-item {
+  width: 270px;
 }
 
 /*Чим займаємось*/
@@ -368,8 +400,22 @@ h3 {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.portf li {
+.portf {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+}
+.gallery-element {
   list-style: none;
+  width: 370px;
+  background-color: tomato;
+  margin-left: 0px;
+  margin-right: 30px;
+}
+.gallery-element:nth-child(3n) {
+  margin-right: 0px;
 }
 .portf-picture {
   padding-bottom: 20px;
