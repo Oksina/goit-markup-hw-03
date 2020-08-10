@@ -246,7 +246,11 @@ body {
   justify-content: space-between;
 }
 .service-job{
+<<<<<<< HEAD
   width: calc((100% - 60px) / 3);
+=======
+  width: calc((100% - 60px)/3);
+>>>>>>> 4ad6d01676e38815a8566135eb07bbd50c7be4d0
   margin-right: 30px;
 }
 
@@ -264,10 +268,16 @@ body {
 .team-members {
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
  
 }
 .members{
   width: 270px;
+=======
+}
+.members{
+  width: calc((100% - 90px)/4);
+>>>>>>> 4ad6d01676e38815a8566135eb07bbd50c7be4d0
   margin-right: 30px;
 }
 .members:nth-child(4n){
@@ -328,7 +338,18 @@ h3 {
 .our-clients {
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
   justify-content: space-between;
+=======
+  .
+}
+.clients-list{
+  width: 170px;
+  margin-right: 30px;
+}
+.clients-list :nth-child(6n){
+  margin-right: 0px;
+>>>>>>> 4ad6d01676e38815a8566135eb07bbd50c7be4d0
 }
 
 /*Футер*/
@@ -339,16 +360,22 @@ h3 {
   color: var(--title-text-color);
   text-decoration: none;
 }
+<<<<<<< HEAD
 
 .add-contacts{
   margin-bottom: 9px;
 }
 .add-contacts:nth-child(3n){
   margin-bottom: 0px;
+=======
+.futer-flex{
+  padding-top: 60px;
+>>>>>>> 4ad6d01676e38815a8566135eb07bbd50c7be4d0
 }
 .info span {
   color: var(--acent-text-color);
 }
+<<<<<<< HEAD
 .futer-flex {
   display: flex;
   flex-wrap: wrap;
@@ -356,6 +383,11 @@ h3 {
   padding-bottom: 60px;
 }
 
+=======
+.fut-logo{
+  padding-top: 60px;
+}
+>>>>>>> 4ad6d01676e38815a8566135eb07bbd50c7be4d0
 .info .fut-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -386,6 +418,8 @@ h3 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+
 }
 .info .subscribe {
   background-color: var(--acent-text-color);
@@ -400,11 +434,16 @@ h3 {
   background-color: var(--acent-text-color);
   padding: 10px 32px;
   display: inline-block;
+<<<<<<< HEAD
+=======
+  align-items: center;
+>>>>>>> 4ad6d01676e38815a8566135eb07bbd50c7be4d0
   border-color: transparent;
   border-radius: 4px;
   margin: auto;
   padding top: 60px;
 }
+<<<<<<< HEAD
 .content-container{
   min-width: 270px;
   margin-right: 30px;
@@ -415,6 +454,13 @@ h3 {
 .subscribe-container{
   display: inline-flex;
   margin-right: 0px;
+=======
+.futer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+>>>>>>> 4ad6d01676e38815a8566135eb07bbd50c7be4d0
 }
 
 /*Портфоліо*/
